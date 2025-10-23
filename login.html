@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    </head>
+    <body>
+        <style>
+            h1{
+                
+                color:orangered;
+            }
+            body{
+                background-image:url("images/pexels-bluemix-5693616.jpg");
+                background-position:center;
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:cover;
+                color:white;
+                padding-left:500px;
+                font-size:20px;
+            }
+            input{
+                width:150px;
+                height:25px;
+                border:2px solid red;
+                border-radius:90px;
+                cursor:pointer;
+               
+            }
+            option{
+                width:90px;
+                height:25px;
+            }
+            a{
+                text-decoration-line:none;
+                
+            }
+            a:hover{
+                color:orange;
+            }
+            input.submit{
+                float:center;
+                width:200px;
+                height:70px;
+                text-align:center;
+                color:white;
+                background-color:black;
+                cursor:pointer;
+            }
+            input.submiT:hover{
+                cursor:pointer;
+                
+                
+            }
+            
+        </style>
+        <h1>Login</h1>
+        <br>
+        <form action="submit.php" method="post">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname" required autocomplete><br>
+            <br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required autocomplete><br>
+            <br>
+            <label for="pno">Phone Number:</label>
+            <input type="pno" id="pno" name="pno" required autocomplete><br>
+            <br>
+            <label for="dbirth">Date Of Birth:</label>
+            <input type="text" id="dbirth" name="dbirth" required autocomplete><br>
+            <br>
+            <p>Gender Check:</p>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="male" value="male"  autocomplete><br>
+            
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="female" value="female"  autocomplete><br>
+            <br>
+            <label for="h address">Home Address:</label>
+            <input type="text" id="h address" name="h address" required><br>
+            <br>
+            <br>
+            <label for="h address">Choose Membership Type:</label>
+            <select id="membership" name="membership">
+                <option value="monthly">Monthly</option>
+                <option value="3 Months">3Months</option>
+                 <option value="Yearly">Yearly</option>
+            </select>
+            <br>
+            <br>
+            <label for="f goal">Fitness Goal:</label>
+            <select id="goal" name="goal">
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Muscle Gain">Muscle Gain</option>
+                 <option value="General Fitness">General Fitness</option>
+            </select>
+            <br>
+            <br>
+            <label for="program">Choose Proogram:</label>
+            <select id="program" name="program">
+                <option value="personal training">Personal Training</option>
+                <option value="Yoga&Flexibility">Yoga And Flexibility</option>
+                <option value="nutrition coaching">Nutrition Coaching</option>
+                <option value="fitness">Group Fitness Classes</option>
+                <option value="Cardio Training">Cardio And Enduarance Training</option>
+
+            </select>
+            <br>
+            <br>
+            <label for="time">Preferred Training Time:</label>
+            <select id="time" name="time">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox"name="terms" required> I Agree to the <a href="terms.html">Terms And Conditions</a> Of The Gym</label>
+            
+            
+            
+            <br>
+            <br>
+            <br>
+            <input class="submit" type="submit" name="Submit" title="Form Submitted"  onclick (alert="form submitted") value="Submit">
+
+
+            
+        </form>
+    </body>
+</html>
